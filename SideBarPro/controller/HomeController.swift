@@ -18,8 +18,16 @@ class HomeController: UIViewController {
         super.viewDidLoad()
         
         
-        view.backgroundColor = .blue
+        view.backgroundColor = .white
     }
     
     //MARK: - Handlers
+    
+    func configureNavigationBar() {
+        navigationController?.navigationBar.barTintColor = .darkGray
+        navigationController?.navigationBar.barStyle = .black
+        
+        navigationItem.title = "Side Menu"
+        navigationItem.leftBarButtonItem = UIBarButtonItem(image: <#T##UIImage?#>, style: <#T##UIBarButtonItem.Style#>, target: <#T##Any?#>, action: <#T##Selector?#>)
+    }
 }
