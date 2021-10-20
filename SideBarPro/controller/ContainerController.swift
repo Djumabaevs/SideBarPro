@@ -18,4 +18,17 @@ class ContainerController: UIViewController {
     }
     
     //MARK: - Handlers
+    
+    func configureHomeController() {
+        let homeController = HomeController()
+        let controller = UINavigationController(rootViewController: homeController)
+        
+        view.addSubview(controller.view)
+        addChild(controller)
+        controller.didMove(toParent: self)
+    }
+    
+    func configureMenuController() {
+        
+    }
 }
