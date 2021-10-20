@@ -9,13 +9,15 @@
 /* Begin PBXBuildFile section */
 		341C105B27208E2E0039B4B5 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 341C105A27208E2E0039B4B5 /* AppDelegate.swift */; };
 		341C105D27208E2E0039B4B5 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 341C105C27208E2E0039B4B5 /* SceneDelegate.swift */; };
-		341C105F27208E2E0039B4B5 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 341C105E27208E2E0039B4B5 /* ViewController.swift */; };
 		341C106227208E2E0039B4B5 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 341C106027208E2E0039B4B5 /* Main.storyboard */; };
 		341C106527208E2E0039B4B5 /* SideBarPro.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 341C106327208E2E0039B4B5 /* SideBarPro.xcdatamodeld */; };
 		341C106727208E2F0039B4B5 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 341C106627208E2F0039B4B5 /* Assets.xcassets */; };
 		341C106A27208E2F0039B4B5 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 341C106827208E2F0039B4B5 /* LaunchScreen.storyboard */; };
 		341C107527208E300039B4B5 /* SideBarProTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 341C107427208E300039B4B5 /* SideBarProTests.swift */; };
 		341C108027208E300039B4B5 /* SideBarProUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 341C107F27208E300039B4B5 /* SideBarProUITests.swift */; };
+		341C109227208F990039B4B5 /* ContainerController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 341C109127208F990039B4B5 /* ContainerController.swift */; };
+		341C109427208FA90039B4B5 /* HomeController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 341C109327208FA90039B4B5 /* HomeController.swift */; };
+		341C109627208FB90039B4B5 /* MenuController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 341C109527208FB90039B4B5 /* MenuController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -39,7 +41,6 @@
 		341C105727208E2E0039B4B5 /* SideBarPro.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SideBarPro.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		341C105A27208E2E0039B4B5 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		341C105C27208E2E0039B4B5 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		341C105E27208E2E0039B4B5 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		341C106127208E2E0039B4B5 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		341C106427208E2E0039B4B5 /* SideBarPro.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = SideBarPro.xcdatamodel; sourceTree = "<group>"; };
 		341C106627208E2F0039B4B5 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -51,6 +52,9 @@
 		341C107B27208E300039B4B5 /* SideBarProUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SideBarProUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		341C107F27208E300039B4B5 /* SideBarProUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SideBarProUITests.swift; sourceTree = "<group>"; };
 		341C108127208E300039B4B5 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		341C109127208F990039B4B5 /* ContainerController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContainerController.swift; sourceTree = "<group>"; };
+		341C109327208FA90039B4B5 /* HomeController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeController.swift; sourceTree = "<group>"; };
+		341C109527208FB90039B4B5 /* MenuController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -101,9 +105,12 @@
 		341C105927208E2E0039B4B5 /* SideBarPro */ = {
 			isa = PBXGroup;
 			children = (
+				341C109027208E570039B4B5 /* view */,
+				341C108F27208E500039B4B5 /* controller */,
+				341C108E27208E480039B4B5 /* model */,
+				341C108D27208E410039B4B5 /* utils */,
 				341C105A27208E2E0039B4B5 /* AppDelegate.swift */,
 				341C105C27208E2E0039B4B5 /* SceneDelegate.swift */,
-				341C105E27208E2E0039B4B5 /* ViewController.swift */,
 				341C106027208E2E0039B4B5 /* Main.storyboard */,
 				341C106627208E2F0039B4B5 /* Assets.xcassets */,
 				341C106827208E2F0039B4B5 /* LaunchScreen.storyboard */,
@@ -129,6 +136,37 @@
 				341C108127208E300039B4B5 /* Info.plist */,
 			);
 			path = SideBarProUITests;
+			sourceTree = "<group>";
+		};
+		341C108D27208E410039B4B5 /* utils */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = utils;
+			sourceTree = "<group>";
+		};
+		341C108E27208E480039B4B5 /* model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = model;
+			sourceTree = "<group>";
+		};
+		341C108F27208E500039B4B5 /* controller */ = {
+			isa = PBXGroup;
+			children = (
+				341C109127208F990039B4B5 /* ContainerController.swift */,
+				341C109327208FA90039B4B5 /* HomeController.swift */,
+				341C109527208FB90039B4B5 /* MenuController.swift */,
+			);
+			path = controller;
+			sourceTree = "<group>";
+		};
+		341C109027208E570039B4B5 /* view */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = view;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -261,7 +299,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				341C105F27208E2E0039B4B5 /* ViewController.swift in Sources */,
+				341C109627208FB90039B4B5 /* MenuController.swift in Sources */,
+				341C109227208F990039B4B5 /* ContainerController.swift in Sources */,
+				341C109427208FA90039B4B5 /* HomeController.swift in Sources */,
 				341C105B27208E2E0039B4B5 /* AppDelegate.swift in Sources */,
 				341C106527208E2E0039B4B5 /* SideBarPro.xcdatamodeld in Sources */,
 				341C105D27208E2E0039B4B5 /* SceneDelegate.swift in Sources */,
