@@ -15,6 +15,8 @@ class ContainerController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        configureHomeController()
     }
     
     //MARK: - Handlers
