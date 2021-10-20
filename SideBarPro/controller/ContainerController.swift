@@ -11,6 +11,8 @@ class ContainerController: UIViewController {
     
     //MARK: - Properties
     
+    var menuController: UIViewController!
+    
     //MARK: - Init
     
     override func viewDidLoad() {
@@ -35,6 +37,12 @@ class ContainerController: UIViewController {
     }
     
     func configureMenuController() {
-        
+        if menuController == nil {
+            //add our menu controller here
+            menuController = MenuController()
+            view.insertSubview(menuController.view, at: 0)
+            addChild(menuController)
+            menuController.didMove(toParent: self)
+        }
     }
 }
