@@ -18,6 +18,7 @@
 		341C109227208F990039B4B5 /* ContainerController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 341C109127208F990039B4B5 /* ContainerController.swift */; };
 		341C109427208FA90039B4B5 /* HomeController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 341C109327208FA90039B4B5 /* HomeController.swift */; };
 		341C109627208FB90039B4B5 /* MenuController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 341C109527208FB90039B4B5 /* MenuController.swift */; };
+		341C109A27209D870039B4B5 /* Protocols.swift in Sources */ = {isa = PBXBuildFile; fileRef = 341C109927209D870039B4B5 /* Protocols.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -55,6 +56,7 @@
 		341C109127208F990039B4B5 /* ContainerController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContainerController.swift; sourceTree = "<group>"; };
 		341C109327208FA90039B4B5 /* HomeController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeController.swift; sourceTree = "<group>"; };
 		341C109527208FB90039B4B5 /* MenuController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuController.swift; sourceTree = "<group>"; };
+		341C109927209D870039B4B5 /* Protocols.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Protocols.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -141,6 +143,7 @@
 		341C108D27208E410039B4B5 /* utils */ = {
 			isa = PBXGroup;
 			children = (
+				341C109927209D870039B4B5 /* Protocols.swift */,
 			);
 			path = utils;
 			sourceTree = "<group>";
@@ -301,6 +304,7 @@
 			files = (
 				341C109627208FB90039B4B5 /* MenuController.swift in Sources */,
 				341C109227208F990039B4B5 /* ContainerController.swift in Sources */,
+				341C109A27209D870039B4B5 /* Protocols.swift in Sources */,
 				341C109427208FA90039B4B5 /* HomeController.swift in Sources */,
 				341C105B27208E2E0039B4B5 /* AppDelegate.swift in Sources */,
 				341C106527208E2E0039B4B5 /* SideBarPro.xcdatamodeld in Sources */,
