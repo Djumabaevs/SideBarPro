@@ -11,6 +11,8 @@ class MenuController: UIViewController {
     
     //MARK: - Properties
     
+    var tableView: UITableView!
+    
     //MARK: - Init
     
     override func viewDidLoad() {
@@ -18,4 +20,12 @@ class MenuController: UIViewController {
     }
     
     //MARK: - Handlers
+    
+    func configureTableView() {
+        tableView = UITableView()
+        tableView.delegate = self
+        tableView.dataSource = self
+    }
 }
+
+
