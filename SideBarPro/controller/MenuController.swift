@@ -27,6 +27,8 @@ class MenuController: UIViewController {
         tableView = UITableView()
         tableView.delegate = self
         tableView.dataSource = self
+        
+        tableView.register(MenuOptionCell.self, forCellReuseIdentifier: reuseIdentifier)
     }
 }
 
