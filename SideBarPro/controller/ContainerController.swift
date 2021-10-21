@@ -47,3 +47,10 @@ class ContainerController: UIViewController {
         }
     }
 }
+
+extension ContainerController: HomeControllerDelegate {
+    func handleMenuToggle() {
+        configureMenuController()
+    }
+    
+}

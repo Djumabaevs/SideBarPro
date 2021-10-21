@@ -6,5 +6,6 @@
 //
 
 protocol HomeControllerDelegate {
+    func handleMenuToggle() 
     
 }
