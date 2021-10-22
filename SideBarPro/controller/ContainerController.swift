@@ -50,7 +50,7 @@ class ContainerController: UIViewController {
         }
     }
     
-    func showMenuController(shouldExpand: Bool) {
+    func animatePanel(shouldExpand: Bool, menuOption: MenuOption?) {
         if shouldExpand {
             //Show menu
             UIView.animate(withDuration: 0.3, delay: 0, usingSpringWithDamping: 0.8, initialSpringVelocity: 0, options: .curveEaseInOut, animations:  {
@@ -63,9 +63,15 @@ class ContainerController: UIViewController {
             //Hide menu
             UIView.animate(withDuration: 0.3, delay: 0, usingSpringWithDamping: 0.8, initialSpringVelocity: 0, options: .curveEaseInOut, animations:  {
                 
-                self.centerController.view.frame.origin.x = 0
-                
             }, completion: nil)
+            
+            UIView.animate(withDuration: 0.5, delay: 0, usingSpringWithDamping: 0.8, initialSpringVelocity: 0, options: .curveEaseInOut, animations:  {
+                
+                self.centerController.view.frame.origin.x = 0
+            }) { (_) in
+                guard let menuOption = menuOption else {return}
+                self.didSelectMenuOption(menuOption: menuOption)
+            }
         }
     }
     func didSelectMenuOption(menuOption: MenuOption) {
@@ -90,7 +96,7 @@ extension ContainerController: HomeControllerDelegate {
         }
         
         isExpanded = !isExpanded
-        showMenuController(shouldExpand: isExpanded)
+        animatePanel(shouldExpand: isExpanded, menuOption: menuOption)
     }
     
 }
