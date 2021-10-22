@@ -68,6 +68,19 @@ class ContainerController: UIViewController {
             }, completion: nil)
         }
     }
+    func didSelectMenuOption(menuOption: MenuOption) {
+        switch menuOption {
+        
+        case .Profile:
+            print("show profile")
+        case .Inbox:
+            print("show inbox")
+        case .Notifications:
+            print("show notifications")
+        case .Settings:
+            print("show settings")
+        }
+    }
 }
 
 extension ContainerController: HomeControllerDelegate {
