@@ -19,6 +19,7 @@ class MenuController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        configureTableView()
     }
     
     //MARK: - Handlers
@@ -29,6 +30,9 @@ class MenuController: UIViewController {
         tableView.dataSource = self
         
         tableView.register(MenuOptionCell.self, forCellReuseIdentifier: reuseIdentifier)
+        tableView.backgroundColor = .darkGray
+        tableView.separatorStyle = .none
+        tableView.rowHeight = 80
         
         view.addSubview(tableView)
         tableView.translatesAutoresizingMaskIntoConstraints = false
