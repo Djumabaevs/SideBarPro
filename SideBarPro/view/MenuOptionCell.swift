@@ -18,6 +18,14 @@ class MenuOptionCell: UITableViewCell {
         return iv
     }()
     
+    let descriptionLabel : UILabel = {
+        let label = UILabel()
+        label.textColor = .white
+        label.font = UIFont.systemFont(ofSize: 16)
+        label.text = "Sample text"
+        return label
+    }()
+    
     //Mark: - Init
     override init(style: UITableViewCell.CellStyle, reuseIdentifier: String?) {
         super.init(style: style, reuseIdentifier: reuseIdentifier)
@@ -26,7 +34,7 @@ class MenuOptionCell: UITableViewCell {
         addSubview(iconImageView)
         iconImageView.translatesAutoresizingMaskIntoConstraints = false
         iconImageView.centerYAnchor.constraint(equalTo: centerYAnchor).isActive = true
-        iconImageView.leftAnchor.constraint(equalTo: leftAnchor).isActive = true
+        iconImageView.leftAnchor.constraint(equalTo: leftAnchor, constant: 12).isActive = true
         iconImageView.heightAnchor.constraint(equalToConstant: 24).isActive = true
         iconImageView.widthAnchor.constraint(equalToConstant: 24).isActive = true
         
