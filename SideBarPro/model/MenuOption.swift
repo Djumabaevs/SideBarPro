@@ -5,6 +5,8 @@
 //  Created by Bakyt Dzhumabaev on 23/10/21.
 //
 
+import UIKit
+
 enum MenuOption: Int, CustomStringConvertible {
     
     case Profile
@@ -21,4 +23,14 @@ enum MenuOption: Int, CustomStringConvertible {
             
         }
     }
+    
+    var image: UIImage {
+        switch self {
+        case .Profile: return UIImage(named: "pawn") ?? UIImage()
+        case .Inbox: return UIImage(named: "pets") ?? UIImage()
+        case .Notifications: return UIImage(named: "profile") ?? UIImage()
+        case .Settings: return UIImage(named: "pets") ?? UIImage()
+        }
+    }
+
 }
