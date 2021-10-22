@@ -14,6 +14,7 @@ class MenuOptionCell: UITableViewCell {
         let iv = UIImageView()
         iv.contentMode = .scaleAspectFit
         iv.clipsToBounds = true
+        iv.backgroundColor = .blue
         return iv
     }()
     
@@ -24,6 +25,11 @@ class MenuOptionCell: UITableViewCell {
         backgroundColor = .darkGray
         addSubview(iconImageView)
         iconImageView.translatesAutoresizingMaskIntoConstraints = false
+        iconImageView.centerYAnchor.constraint(equalTo: centerYAnchor).isActive = true
+        iconImageView.leftAnchor.constraint(equalTo: leftAnchor).isActive = true
+        iconImageView.heightAnchor.constraint(equalToConstant: 24).isActive = true
+        iconImageView.widthAnchor.constraint(equalToConstant: 24).isActive = true
+        
         
     }
     
