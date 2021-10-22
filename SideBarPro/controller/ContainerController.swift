@@ -70,10 +70,6 @@ class ContainerController: UIViewController {
 
         } else {
             //Hide menu
-            UIView.animate(withDuration: 0.3, delay: 0, usingSpringWithDamping: 0.8, initialSpringVelocity: 0, options: .curveEaseInOut, animations:  {
-                
-            }, completion: nil)
-            
             UIView.animate(withDuration: 0.5, delay: 0, usingSpringWithDamping: 0.8, initialSpringVelocity: 0, options: .curveEaseInOut, animations:  {
                 
                 self.centerController.view.frame.origin.x = 0
@@ -82,6 +78,7 @@ class ContainerController: UIViewController {
                 self.didSelectMenuOption(menuOption: menuOption)
             }
         }
+        animateStatusBar()
     }
     func didSelectMenuOption(menuOption: MenuOption) {
         switch menuOption {
@@ -95,6 +92,14 @@ class ContainerController: UIViewController {
         case .Settings:
             print("show settings")
         }
+    }
+    
+    func animateStatusBar() {
+        UIView.animate(withDuration: 0.3, delay: 0, usingSpringWithDamping: 0.8, initialSpringVelocity: 0, options: .curveEaseInOut, animations:  {
+            
+            self.setNeedsStatusBarAppearanceUpdate()
+            
+        }, completion: nil)
     }
 }
 
