@@ -31,7 +31,9 @@ class ContainerController: UIViewController {
         return .slide
     }
     
-    
+    override var prefersStatusBarHidden: Bool {
+        return isExpanded
+    }
     
     //MARK: - Handlers
     
