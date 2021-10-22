@@ -11,7 +11,7 @@ class ContainerController: UIViewController {
     
     //MARK: - Properties
     
-    var menuController: UIViewController!
+    var menuController: MenuController!
     var centerController: UIViewController!
     var isExpanded = false
     
@@ -26,6 +26,12 @@ class ContainerController: UIViewController {
     override var preferredStatusBarStyle: UIStatusBarStyle {
         return .lightContent
     }
+    
+    override var preferredStatusBarUpdateAnimation: UIStatusBarAnimation {
+        return .slide
+    }
+    
+    
     
     //MARK: - Handlers
     
@@ -43,6 +49,7 @@ class ContainerController: UIViewController {
         if menuController == nil {
             //add our menu controller here
             menuController = MenuController()
+            menuController.delegate = self
             view.insertSubview(menuController.view, at: 0)
             addChild(menuController)
             menuController.didMove(toParent: self)
