@@ -19,6 +19,8 @@ class SettingsController: UIViewController {
         super.viewDidLoad()
             configureUI()
         
+//        showNavigationBar(large: true, animated: true, isTransparabar: false, titleColor: .blue, barBackGroundColor: .darkGray, fontSize: 18)
+        
 //        configureNavigationBar(largeTitleColor: .blue, backgoundColor: .darkGray, tintColor: .red, title: "Settings", preferredLargeTitle: true)
         
         if let username = username {
@@ -34,7 +36,7 @@ class SettingsController: UIViewController {
         view.backgroundColor = .white
         navigationController?.navigationBar.barTintColor = .darkGray
         navigationController?.navigationBar.prefersLargeTitles = true
-        navigationItem.title = "Settings"
+        self.navigationItem.title = "Settings"
         navigationController?.navigationBar.barStyle = .black
         
         navigationItem.leftBarButtonItem = UIBarButtonItem(image: #imageLiteral(resourceName: "pawn").withRenderingMode(.alwaysOriginal), style: .plain, target: self, action: #selector(handleDismiss))
