@@ -91,6 +91,8 @@ class ContainerController: UIViewController {
             print("show notifications")
         case .Settings:
             let controller = SettingsController()
+            controller.modalPresentationStyle = .fullScreen
+            controller.username = "Iron Man"
             present(UINavigationController(rootViewController: controller), animated: true, completion: nil)
         }
     }
