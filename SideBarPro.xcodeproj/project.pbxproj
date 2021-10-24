@@ -21,6 +21,7 @@
 		341C109A27209D870039B4B5 /* Protocols.swift in Sources */ = {isa = PBXBuildFile; fileRef = 341C109927209D870039B4B5 /* Protocols.swift */; };
 		341C109C2721E71F0039B4B5 /* MenuOptionCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 341C109B2721E71F0039B4B5 /* MenuOptionCell.swift */; };
 		341C109E2723396C0039B4B5 /* MenuOption.swift in Sources */ = {isa = PBXBuildFile; fileRef = 341C109D2723396C0039B4B5 /* MenuOption.swift */; };
+		341C10A027250E080039B4B5 /* SettingsController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 341C109F27250E070039B4B5 /* SettingsController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -61,6 +62,7 @@
 		341C109927209D870039B4B5 /* Protocols.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Protocols.swift; sourceTree = "<group>"; };
 		341C109B2721E71F0039B4B5 /* MenuOptionCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuOptionCell.swift; sourceTree = "<group>"; };
 		341C109D2723396C0039B4B5 /* MenuOption.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuOption.swift; sourceTree = "<group>"; };
+		341C109F27250E070039B4B5 /* SettingsController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -166,6 +168,7 @@
 				341C109127208F990039B4B5 /* ContainerController.swift */,
 				341C109327208FA90039B4B5 /* HomeController.swift */,
 				341C109527208FB90039B4B5 /* MenuController.swift */,
+				341C109F27250E070039B4B5 /* SettingsController.swift */,
 			);
 			path = controller;
 			sourceTree = "<group>";
@@ -314,6 +317,7 @@
 				341C109427208FA90039B4B5 /* HomeController.swift in Sources */,
 				341C109E2723396C0039B4B5 /* MenuOption.swift in Sources */,
 				341C105B27208E2E0039B4B5 /* AppDelegate.swift in Sources */,
+				341C10A027250E080039B4B5 /* SettingsController.swift in Sources */,
 				341C109C2721E71F0039B4B5 /* MenuOptionCell.swift in Sources */,
 				341C106527208E2E0039B4B5 /* SideBarPro.xcdatamodeld in Sources */,
 				341C105D27208E2E0039B4B5 /* SceneDelegate.swift in Sources */,
