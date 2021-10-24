@@ -19,6 +19,8 @@ class SettingsController: UIViewController {
         super.viewDidLoad()
             configureUI()
         
+//        configureNavigationBar(largeTitleColor: .blue, backgoundColor: .darkGray, tintColor: .red, title: "Settings", preferredLargeTitle: true)
+        
         if let username = username {
             print("Username is \(username)")
         }
@@ -41,6 +43,37 @@ class SettingsController: UIViewController {
     @objc func handleDismiss() {
         dismiss(animated: true, completion: nil)
     }
+    
+    open func showNavigationBar(large: Bool,
+                                animated: Bool,
+                                isTransparabar: Bool,
+                                titleColor: UIColor,
+                                barBackGroundColor: UIColor,
+                                fontSize: CGFloat) {
+
+            navigationController?.navigationBar.barTintColor = barBackGroundColor
+            navigationController?.navigationBar.backgroundColor = barBackGroundColor
+            navigationController?.navigationBar.isTranslucent = true
+            self.navigationController?.setNavigationBarHidden(false, animated: animated)
+            if large {
+                self.navigationController?.navigationBar.prefersLargeTitles = true
+                if #available(iOS 13.0, *) {
+                    let appearance = UINavigationBarAppearance()
+                    appearance.backgroundColor = barBackGroundColor
+                    appearance.titleTextAttributes = [.foregroundColor: titleColor]
+                    appearance.largeTitleTextAttributes = [NSAttributedString.Key.foregroundColor: titleColor]
+
+                    navigationController?.navigationBar.standardAppearance = appearance
+                    navigationController?.navigationBar.compactAppearance = appearance
+                    navigationController?.navigationBar.scrollEdgeAppearance = appearance
+                } else {
+                    self.navigationController?.navigationBar.largeTitleTextAttributes = [NSAttributedString.Key.foregroundColor: titleColor]
+                }
+            } else {
+                self.navigationController?.navigationBar.prefersLargeTitles = false
+                self.navigationController?.navigationBar.titleTextAttributes = [NSAttributedString.Key.foregroundColor: titleColor]
+            }
+        }
 }
 
 extension UIViewController {
