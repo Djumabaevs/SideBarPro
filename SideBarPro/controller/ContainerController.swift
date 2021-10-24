@@ -90,7 +90,8 @@ class ContainerController: UIViewController {
         case .Notifications:
             print("show notifications")
         case .Settings:
-            print("show settings")
+            let controller = SettingsController()
+            present(controller, animated: true, completion: nil)
         }
     }
     

@@ -14,7 +14,9 @@ class SettingsController: UIViewController {
     //Mark: - Init
     
     override func viewDidLoad() {
+        super.viewDidLoad()
         
+        view.backgroundColor = .red
     }
     
     //Mark: - Handlers
