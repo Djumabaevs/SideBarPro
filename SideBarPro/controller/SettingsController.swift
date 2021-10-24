@@ -20,4 +20,8 @@ class SettingsController: UIViewController {
     }
     
     //Mark: - Handlers
+    
+    func configureUI() {
+        navigationController?.navigationBar.barTintColor = .darkGray
+    }
 }
